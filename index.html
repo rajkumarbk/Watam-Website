@@ -97,7 +97,6 @@
           </li>
           <li class="nav-item">
             <a href="/en/" id="langToggle" class="nav-link d-inline">Eng</a>
-            <i class="bi bi-globe d-inline"></i>
           </li>
 
         </ul>
@@ -474,67 +473,78 @@
 
 
 
-    <!-- services Section -->
+    <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="">خدمات</h2>
-
-        <p class="">"نحن نقدم خدمات زجاج السيارات المتخصصة سواء في المرآب الخاص بنا أو في موقعك لراحتك"</p>
+        <h2 class="text-center">خدمات</h2>
+        <p class="text-center">"نحن نقدم خدمات زجاج السيارات المتخصصة سواء في المرآب الخاص بنا أو في موقعك لراحتك"</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5 align-items-center">
 
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <!-- Right Column: Services Content (RTL: Right side) -->
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
             <div class="services-intro">
-              <h2 class="">خدمات تركيب وصيانة زجاج السيارات</h2>
+              <h3 class="mb-4">خدمات تركيب وصيانة زجاج السيارات</h3>
 
-              <div class="services-grid" id="gm-card">
-                <div class="row g-10" id="ser">
-                  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="feature-box text-center">
-                      <div class="feature-icon-wrapper">
-                        <i class="bi bi-car-front"></i>
+              <!-- Service Cards -->
+              <div class="services-grid mb-4">
+                <div class="row g-4">
+
+                  <!-- Garage Service Card -->
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-box text-center h-100 p-4 border rounded">
+                      <div class="feature-icon-wrapper mb-3">
+                        <i class="bi bi-car-front fs-1"></i>
                       </div>
-                      <h4 class="">خدمة المرآب</h4>
-
+                      <h4 class="mb-3">خدمة المرآب</h4>
+                      <p class="mb-0 small">خدمات إصلاح واستبدال زجاج السيارات في منشأتنا المجهزة بأحدث التقنيات</p>
                     </div>
                   </div>
 
-                  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="feature-box text-center">
-                      <div class="feature-icon-wrapper">
-                        <i class="bi bi-lightning-charge"></i>
+                  <!-- Mobile Service Card -->
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-box text-center h-100 p-4 border rounded">
+                      <div class="feature-icon-wrapper mb-3">
+                        <i class="bi bi-lightning-charge fs-1"></i>
                       </div>
-                      <h4 class="">خدمة الهاتف المحمول</h4>
+                      <h4 class="mb-3">خدمة متنقلة</h4>
+                      <p class="mb-0 small">خدمات تقدم مباشرة إلى منزلك أو مكان العمل لراحتك وسهولة الوصول</p>
                     </div>
                   </div>
 
-                  <p class="" style="text-align: justify;">نحن نقدم خدمات إصلاح واستبدال زجاج السيارات
-                    الخبرة،<br> سواء في ورشتنا أو في الموقع حسب احتياجكم</p>
                 </div>
+              </div>
 
+              <!-- Service Description -->
+              <div class="service-description p-4 bg-light rounded">
+                <p class="mb-0 text-justify">نحن نقدم خدمات إصلاح واستبدال زجاج السيارات الخبرة، سواء في ورشتنا أو في
+                  الموقع حسب احتياجكم</p>
+              </div>
+
+            </div>
+          </div><!-- End Right Column -->
+
+          <!-- Left Column: Featured Image (RTL: Left side) -->
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="300">
+            <div class="featured-image-container position-relative">
+              <div class="image-wrapper rounded overflow-hidden">
+                <img src="assets/img/w7.jpg" alt="خدمات زجاج السيارات" class="img-fluid">
+              </div>
+              <div class="floating-badge text-white p-3 rounded shadow-sm">
+                <i class="bi bi-award me-2"></i>
+                <span>رائد الصناعة</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="featured-image-container">
-              <img src="assets/img/w7.jpg" alt="Digital Solutions" class="img-fluid">
-              <div class="floating-badge">
-                <i class="bi bi-award"></i>
-                <span class="">رائد الصناعة</span>
-              </div>
-            </div>
-
-          </div>
+          </div><!-- End Left Column -->
 
         </div>
       </div>
-      </div>
 
-    </section><!-- /services Section -->
+    </section><!-- /Services Section -->
 
     <!-- Gallery Section -->
     <section id="portfolio" class="portfolio section">
@@ -624,25 +634,16 @@
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
-      <div class="content px-xl-5" id="faq-content" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
-
-        <h3 class="">الأسئلة الشائعة</h3>
-
-      </div>
-      <div class="container" style="display: flex; align-items: center;">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="section-header text-center mb-5">
+              <h3>الأسئلة الشائعة</h3>
+            </div>
 
             <div class="faq-container">
-
-
-              <div class="faq-item ">
-                <h3><span class="num">١.</span><span>ما هي أنواع خدمات زجاج السيارات التي تقدمونها؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">١.</span><span>ما هي أنواع خدمات زجاج السيارات التي تقدمونها؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> نقدم حلولًا متكاملة تشمل تغيير جميع جوانب زجاج السيارات الأمامي والجانبي
                     والخلفي باستخدام زجاج عالي الجودة مطابق للمواصفات الأصلية. خدماتنا تركز على توفير الأمان والوضوح
@@ -651,10 +652,8 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 1-->
 
-
-
-              <div class="faq-item ">
-                <h3><span class="num">٢.</span><span> كم يستغرق استبدال الزجاج الأمامي؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">٢.</span><span> كم يستغرق استبدال الزجاج الأمامي؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> تستغرق عملية استبدال الزجاج الأمامي عادة من ساعة إلى ساعتين حسب نوع
                     السيارة والزجاج المطلوب تركيبه. نحرص دائمًا على إنجاز العمل بسرعة مع الالتزام بأعلى معايير الجودة
@@ -663,9 +662,8 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 2-->
 
-
-              <div class="faq-item ">
-                <h3><span class="num">٣.</span> <span>هل تقدمون خدمات متنقلة خارج الورشة؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">٣.</span> <span>هل تقدمون خدمات متنقلة خارج الورشة؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> نعم، نوفر خدمة متنقلة تتيح للعملاء إجراء الإصلاح أو الاستبدال في منازلهم
                     أو أماكن عملهم أو أي موقع يفضلونه. هذه الخدمة صممت لتوفير الوقت والجهد مع الحفاظ على نفس جودة خدمات
@@ -674,9 +672,8 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 3-->
 
-
-              <div class="faq-item ">
-                <h3><span class="num">٤.</span> <span>هل يشترط حجز موعد مسبق للحصول على الخدمة؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">٤.</span> <span>هل يشترط حجز موعد مسبق للحصول على الخدمة؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> ننصح بحجز موعد مسبق لضمان سرعة الخدمة وتفادي الانتظار، لكننا نستقبل
                     العملاء أيضًا دون موعد داخل الورشة. أما الخدمة المتنقلة فيُفضل التنسيق المسبق عبر الهاتف لتحديد
@@ -685,9 +682,8 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 4-->
 
-
-              <div class="faq-item ">
-                <h3><span class="num">٥.</span> <span>ما هي أنواع المركبات التي تشملها خدماتكم؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">٥.</span> <span>ما هي أنواع المركبات التي تشملها خدماتكم؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> تشمل خدماتنا جميع المركبات بما في ذلك السيارات الصغيرة وسيارات الدفع
                     الرباعي والشاحنات والشاحنات الصغيرة. نحن مجهزون للتعامل مع مختلف الموديلات لتلبية كافة الاحتياجات.
@@ -696,8 +692,8 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 5-->
 
-              <div class="faq-item ">
-                <h3><span class="num">٦.</span> <span>هل تقدمون ضمانًا على خدمات الزجاج؟ </span></h3>
+              <div class="faq-item">
+                <h3><span class="num">٦.</span> <span>هل تقدمون ضمانًا على خدمات الزجاج؟</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-left"> نعم، نقدم ضمان على خدمات الزجاج مع الالتزام بأعلى معايير الجودة والمتانة
                     لضمان السلامة والوضوح أثناء القيادة.</p>
@@ -705,12 +701,9 @@
                 <i class="faq-toggle bi bi-chevron-left"></i>
               </div><!-- End Faq item 6-->
             </div>
-
           </div>
         </div>
-
       </div>
-
     </section><!-- /Faq Section -->
 
 
@@ -718,61 +711,88 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="">اتصال</h2>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-4">اتصل بنا</h2>
+          </div>
+        </div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row g-4 g-lg-5 justify-content-center">
 
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="">معلومات الاتصال</h3>
-              <p class="">لا تتردد في الاتصال بنا</p>
+              <!-- Contact Form (Right side in RTL) -->
+              <div class="col-lg-5 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-form h-100">
+                  <iframe aria-label='ارسل لنا رسالة' frameborder="0"
+                    style="height:500px;width:100%;border:none;border-radius:8px;"
+                    src='https://forms.zohopublic.com/rajwatam1/form/ContactUs1/formperma/CU4AdkCpeTKXNt0n7QuoKcSXF0lwTysf8d3LHSHKdGA'>
+                  </iframe>
+                </div>
+              </div><!-- End Contact Form -->
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4 class="">الرياض</h4>
-                  <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-geo-alt me-2"></i><a
-                      href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank">طريق الأمير بندر بن عبدالعزيز،
-                      الرياض</a></p>
-                </div>
-              </div>
+              <!-- Contact Info Box (Left side in RTL) -->
+              <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-box h-100 p-4 border rounded">
+                  <h3 class="mb-4">معلومات الاتصال</h3>
+                  <p class="mb-4 text-muted">لا تتردد في الاتصال بنا</p>
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4 class="">اتصل بنا</h4>
-                  <p class=""><a href="callto:955 282 505 966+">955 282 505 966+</a></p>
-                </div>
-              </div>
+                  <!-- Location Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box ms-3">
+                        <i class="bi bi-geo-alt fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">موقعنا</h4>
+                        <p class="mb-0">
+                          <a href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank"
+                            class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt ms-2"></i>طريق الأمير بندر بن عبدالعزيز، الرياض
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Location Info -->
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
+                  <!-- Phone Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box ms-3">
+                        <i class="bi bi-telephone fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">رقم الهاتف</h4>
+                        <p class="mb-0">
+                          <a href="tel:+966505282955">+966 505 282 955</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Phone Info -->
+
+                  <!-- Email Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box ms-3">
+                        <i class="bi bi-envelope fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">البريد الإلكتروني</h4>
+                        <p class="mb-0">
+                          <a href="mailto:info@watamglass.com">info@watamglass.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Email Info -->
                 </div>
-                <div class="content">
-                  <h4 class="">البريد الإلكتروني</h4>
-                  <p><a href="mailto:info@watamglass.com">info@watamglass.com</a></p>
-                </div>
-              </div>
+              </div><!-- End Contact Info Box -->
+
             </div>
           </div>
-
-          <div class="col-lg-5">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <iframe aria-label='ارسل لنا رسالة' frameborder="0" style="height:500px;width:99%;border:none;"
-                src='https://forms.zohopublic.com/rajwatam1/form/ContactUs1/formperma/CU4AdkCpeTKXNt0n7QuoKcSXF0lwTysf8d3LHSHKdGA'></iframe>
-            </div>
-          </div>
-
         </div>
-
       </div>
 
     </section><!-- /Contact Section -->

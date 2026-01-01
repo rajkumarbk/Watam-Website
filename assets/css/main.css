@@ -255,16 +255,19 @@ h1 span {
 /* For Arabic (RTL) */
 html[dir="rtl"] .logo {
   margin-left: auto !important;
-  margin-right: 0 !important; /* stick logo to far right */
+  margin-right: 0 !important;
+  /* stick logo to far right */
 }
 
 html[dir="rtl"] #navmenu {
   margin-left: 0 !important;
-  margin-right: auto !important; /* push nav to the left */
+  margin-right: auto !important;
+  /* push nav to the left */
 }
 
 html[dir="rtl"] #navmenu ul {
-  justify-content: flex-start !important; /* align links starting from left */
+  justify-content: flex-start !important;
+  /* align links starting from left */
 }
 
 html[dir="rtl"] #navmenu ul li {
@@ -275,16 +278,19 @@ html[dir="rtl"] #navmenu ul li {
 /* For English (LTR) */
 html[dir="ltr"] .logo {
   margin-right: auto !important;
-  margin-left: 0 !important; /* stick logo to far left */
+  margin-left: 0 !important;
+  /* stick logo to far left */
 }
 
 html[dir="ltr"] #navmenu {
   margin-right: 0 !important;
-  margin-left: auto !important; /* push nav to the right */
+  margin-left: auto !important;
+  /* push nav to the right */
 }
 
 html[dir="ltr"] #navmenu ul {
-  justify-content: flex-end !important; /* align links starting from right */
+  justify-content: flex-end !important;
+  /* align links starting from right */
 }
 
 html[dir="ltr"] #navmenu ul li {
@@ -407,12 +413,12 @@ html[lang="en"] .navmenu .lang-ar {
     position: relative;
     z-index: 10000;
   }
-  
+
   .mobile-nav-toggle:hover {
     color: #ffcd8f;
     transform: scale(1.1) rotate(90deg);
   }
-  
+
   .mobile-nav-toggle:active {
     transform: scale(0.95);
   }
@@ -441,27 +447,27 @@ html[lang="en"] .navmenu .lang-ar {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 9998;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-                0 4px 16px rgba(0, 0, 0, 0.2),
-                inset 0 1px 1px rgba(255, 255, 255, 0.3),
-                inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+      0 4px 16px rgba(0, 0, 0, 0.2),
+      inset 0 1px 1px rgba(255, 255, 255, 0.3),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
-  
+
   /* Smooth scroll for overflow */
   .navmenu ul::-webkit-scrollbar {
     width: 6px;
   }
-  
+
   .navmenu ul::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   .navmenu ul::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     transition: background 0.3s ease;
   }
-  
+
   .navmenu ul::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.5);
   }
@@ -484,7 +490,7 @@ html[lang="en"] .navmenu .lang-ar {
     overflow: hidden;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   }
-  
+
   /* Hover effect background */
   .navmenu a::before {
     content: '';
@@ -493,19 +499,19 @@ html[lang="en"] .navmenu .lang-ar {
     top: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(90deg, 
-                rgba(255, 255, 255, 0.2) 0%, 
-                rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.1) 100%);
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 12px;
     z-index: -1;
   }
-  
+
   .navmenu a:hover::before,
   .navmenu .active::before {
     width: 100%;
   }
-  
+
   /* Left accent bar on hover/active */
   .navmenu a::after {
     content: '';
@@ -519,7 +525,7 @@ html[lang="en"] .navmenu .lang-ar {
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 0 4px 4px 0;
   }
-  
+
   .navmenu a:hover::after,
   .navmenu .active::after {
     width: 4px;
@@ -537,9 +543,9 @@ html[lang="en"] .navmenu .lang-ar {
     justify-content: center;
     border-radius: 10px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(135deg, 
-                rgba(243, 191, 127, 0.1) 0%, 
-                rgba(243, 191, 127, 0.15) 100%);
+    background: linear-gradient(135deg,
+        rgba(243, 191, 127, 0.1) 0%,
+        rgba(243, 191, 127, 0.15) 100%);
     box-shadow: 0 2px 8px rgba(243, 191, 127, 0.1);
   }
 
@@ -580,12 +586,13 @@ html[lang="en"] .navmenu .lang-ar {
     transition: all 0.3s ease-in-out;
     animation: slideDown 0.3s ease-out;
   }
-  
+
   @keyframes slideDown {
     from {
       opacity: 0;
       transform: translateY(-10px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -597,7 +604,7 @@ html[lang="en"] .navmenu .lang-ar {
     margin-left: 20px;
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
   }
 
@@ -617,12 +624,13 @@ html[lang="en"] .navmenu .lang-ar {
     animation: rotateIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1;
   }
-  
+
   @keyframes rotateIn {
     from {
       transform: translateX(-50%) rotate(-90deg);
       opacity: 0;
     }
+
     to {
       transform: translateX(-50%) rotate(0deg);
       opacity: 1;
@@ -633,74 +641,95 @@ html[lang="en"] .navmenu .lang-ar {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: linear-gradient(135deg, 
-                rgba(0, 0, 0, 0.4) 0%, 
-                rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(135deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.6) 100%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     animation: fadeIn 0.4s ease-out;
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
     animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
   }
-  
+
   @keyframes slideInRight {
     from {
       opacity: 0;
       transform: translateX(40px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
     }
   }
-  
+
   /* Stagger animation for menu items */
-  .mobile-nav-active .navmenu > ul > li {
+  .mobile-nav-active .navmenu>ul>li {
     animation: fadeInUp 0.4s ease-out backwards;
   }
-  
-  .mobile-nav-active .navmenu > ul > li:nth-child(1) { animation-delay: 0.05s; }
-  .mobile-nav-active .navmenu > ul > li:nth-child(2) { animation-delay: 0.1s; }
-  .mobile-nav-active .navmenu > ul > li:nth-child(3) { animation-delay: 0.15s; }
-  .mobile-nav-active .navmenu > ul > li:nth-child(4) { animation-delay: 0.2s; }
-  .mobile-nav-active .navmenu > ul > li:nth-child(5) { animation-delay: 0.25s; }
-  .mobile-nav-active .navmenu > ul > li:nth-child(6) { animation-delay: 0.3s; }
-  
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+
+  .mobile-nav-active .navmenu>ul>li:nth-child(6) {
+    animation-delay: 0.3s;
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
+
   /* Smooth close animation */
-  .navmenu.closing > ul {
+  .navmenu.closing>ul {
     animation: slideOutLeft 0.3s ease-in forwards;
   }
-  
+
   @keyframes slideOutLeft {
     from {
       opacity: 1;
       transform: translateX(0);
     }
+
     to {
       opacity: 0;
       transform: translateX(-40px);
@@ -741,8 +770,10 @@ html[lang="en"] .navmenu .lang-ar {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 20px; /* Changed: Distance from bottom */
-  left: 15px;   /* Changed: Distance from left */
+  bottom: 20px;
+  /* Changed: Distance from bottom */
+  left: 15px;
+  /* Changed: Distance from left */
   /* Removed: top: 50% and right: 5px */
   background-color: #25d366;
   color: #FFF;
@@ -765,7 +796,8 @@ html[lang="en"] .navmenu .lang-ar {
 
 /* Update the icon positioning */
 .whats-app i {
-  margin-top: 0; /* Remove the my-float margin */
+  margin-top: 0;
+  /* Remove the my-float margin */
 }
 
 .footer h4 {
@@ -1565,7 +1597,7 @@ section,
 }
 
 .branches .service-item h3 {
-  
+
   font-family: var(--heading-font);
   font-weight: 700;
   margin-bottom: 15px;

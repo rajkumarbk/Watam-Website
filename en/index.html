@@ -98,7 +98,6 @@
 
           <li class="nav-item">
             <a href="../" class="nav-link d-inline">عربي</a>
-            <i class="bi bi-globe d-inline"></i>
           </li>
 
         </ul>
@@ -452,67 +451,81 @@
 
 
 
-    <!-- services Section -->
+    <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 class="">Services</h2>
-        <p class="">"At Watam Auto Glass, we offer expert auto glass services both at our garage and at your
+        <h2 class="text-center">Our Services</h2>
+        <p class="text-center">"At Watam Auto Glass, we offer expert auto glass services both at our garage and at your
           location for your convenience"</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5 align-items-center">
 
-        <div class="row align-items-center mb-5">
+          <!-- Left Column: Services Content -->
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="services-intro">
-              <h2 class="">Automotive glass installation and maintenance services.</h2>
+              <h3 class="mb-4">Automotive glass installation and maintenance services.</h3>
 
-              <div class="services-grid" id="gm-card">
-                <div class="row g-10" id="ser">
-                  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="feature-box text-center">
-                      <div class="feature-icon-wrapper">
-                        <i class="bi bi-car-front"></i>
+              <!-- Service Cards -->
+              <div class="services-grid mb-4">
+                <div class="row g-4">
+
+                  <!-- Garage Service Card -->
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-box text-center h-100 p-4 border rounded">
+                      <div class="feature-icon-wrapper mb-3">
+                        <i class="bi bi-car-front fs-1"></i>
                       </div>
-                      <h4 class="">Garage Service</h4>
-
+                      <h4 class="mb-3">Garage Service</h4>
+                      <p class="mb-0 small">Professional auto glass repair and replacement at our fully-equipped
+                        facility.</p>
                     </div>
-                  </div>
+                  </div><!-- End Garage Service -->
 
-                  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="feature-box text-center">
-                      <div class="feature-icon-wrapper">
-                        <i class="bi bi-lightning-charge"></i>
+                  <!-- Mobile Service Card -->
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-box text-center h-100 p-4 border rounded">
+                      <div class="feature-icon-wrapper mb-3">
+                        <i class="bi bi-lightning-charge fs-1"></i>
                       </div>
-                      <h4 class="">Mobile Service</h4>
+                      <h4 class="mb-3">Mobile Service</h4>
+                      <p class="mb-0 small">Expert service delivered directly to your home or workplace for ultimate
+                        convenience.</p>
                     </div>
-                  </div>
-                  <p class="" style="text-align: left;">We provide expert auto glass repair and replacement,
-                    both at our garage and on-site, wherever you need us</p>
+                  </div><!-- End Mobile Service -->
 
                 </div>
-
               </div>
+
+              <!-- Service Description -->
+              <div class="service-description p-4 bg-light rounded">
+                <p class="mb-0">We provide expert auto glass repair and replacement, both at our garage and on-site,
+                  wherever you need us.</p>
+              </div>
+
             </div>
-          </div>
+          </div><!-- End Left Column -->
+
+          <!-- Right Column: Featured Image -->
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="featured-image-container">
-              <img src="../assets/img/w7.jpg" alt="Digital Solutions" class="img-fluid">
-              <div class="floating-badge">
-                <i class="bi bi-award"></i>
-                <span class="">Industry Leader</span>
+            <div class="featured-image-container position-relative">
+              <div class="image-wrapper rounded overflow-hidden">
+                <img src="../assets/img/w7.jpg" alt="Auto Glass Service" class="img-fluid">
+              </div>
+              <div class="floating-badge text-white p-3 rounded shadow-sm">
+                <i class="bi bi-award me-2"></i>
+                <span>Industry Leader</span>
               </div>
             </div>
-
-          </div>
+          </div><!-- End Right Column -->
 
         </div>
       </div>
-      </div>
 
-    </section><!-- /services Section -->
+    </section><!-- /Services Section -->
 
     <!-- Gallery Section -->
     <section id="portfolio" class="portfolio section">
@@ -601,25 +614,18 @@
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
-      <div class="content px-xl-5" id="faq-content" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
-
-        <h3 class="">Frequently Asked Questions</h3>
-
-      </div>
-      <div class="container" style="display: flex; align-items: center;">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8"> <!-- Adjusted width for better centering -->
+            <div class="section-header text-center mb-5">
+              <h3>Frequently Asked Questions</h3>
+            </div>
 
             <div class="faq-container">
-              <div class="faq-item ">
+              <div class="faq-item">
                 <h3><span class="num">1.</span><span> What types of car glass services do you offer?</span></h3>
                 <div class="faq-content">
-                  <p class="bi bi-arrow-right "> We provide comprehensive solutions that include replacing all sides of
+                  <p class="bi bi-arrow-right"> We provide comprehensive solutions that include replacing all sides of
                     car glass, including the front, side, and rear windows, using high-quality glass that meets the
                     original vehicle specifications. Our services focus on ensuring safety, clarity, and durability for
                     a secure driving experience.</p>
@@ -627,7 +633,7 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
 
-              <div class="faq-item ">
+              <div class="faq-item">
                 <h3><span class="num">2.</span> <span> Do you offer mobile services outside the workshop?</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-right"> Yes, we provide a mobile service that allows customers to have repairs
@@ -637,7 +643,7 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
 
-              <div class="faq-item ">
+              <div class="faq-item">
                 <h3><span class="num">3.</span> <span> How long does it take to replace the front glass?</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-right"> Replacing the front glass usually takes between one and two hours,
@@ -645,9 +651,9 @@
                     efficiently while adhering to the highest quality and safety standards.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
-              <div class="faq-item ">
+              <div class="faq-item">
                 <h3><span class="num">4.</span> <span> Is a prior appointment required to receive the service?</span>
                 </h3>
                 <div class="faq-content">
@@ -658,7 +664,7 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
 
-              <div class="faq-item ">
+              <div class="faq-item">
                 <h3><span class="num">5.</span> <span> What types of vehicles are covered by your services?</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-right"> Our services cover all types of vehicles, including small cars, SUVs,
@@ -666,7 +672,8 @@
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-              <div class="faq-item ">
+
+              <div class="faq-item">
                 <h3><span class="num">6.</span> <span> Do you provide a warranty on glass services?</span></h3>
                 <div class="faq-content">
                   <p class="bi bi-arrow-right"> Yes, we provide a warranty on glass services, adhering to the highest
@@ -675,12 +682,9 @@
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
-
     </section><!-- /Faq Section -->
 
 
@@ -688,66 +692,88 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="">Contact</h2>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-4">Contact Us</h2>
+          </div>
+        </div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row g-4 g-lg-5 justify-content-center">
 
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="">Contact Info</h3>
-              <p class="">Feel free to contact us</p>
+              <!-- Contact Info Box -->
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-box h-100 p-4 border rounded">
+                  <h3 class="mb-4">Contact Info</h3>
+                  <p class="mb-4 text-muted">Feel free to contact us</p>
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4 class="">Our Location</h4>
-                  <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-geo-alt me-2"></i><a
-                      href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank">Riyadh</a></p>
-                </div>
-              </div>
+                  <!-- Location Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box me-3">
+                        <i class="bi bi-geo-alt fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">Our Location</h4>
+                        <p class="mb-0">
+                          <a href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank"
+                            class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt me-2"></i>Riyadh
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Location Info -->
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4 class="">Phone Number</h4>
-                  <p class=""><a href="callto:+966 505 282 955">+966 505 282 955</a></p>
-                </div>
-              </div>
+                  <!-- Phone Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box me-3">
+                        <i class="bi bi-telephone fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">Phone Number</h4>
+                        <p class="mb-0">
+                          <a href="tel:+966505282955">+966 505 282 955</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Phone Info -->
 
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
+                  <!-- Email Info -->
+                  <div class="info-item mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="d-flex align-items-start">
+                      <div class="icon-box me-3">
+                        <i class="bi bi-envelope fs-5"></i>
+                      </div>
+                      <div class="content">
+                        <h4 class="mb-2">Email Address</h4>
+                        <p class="mb-0">
+                          <a href="mailto:info@watamglass.com">info@watamglass.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End Email Info -->
                 </div>
-                <div class="content">
-                  <h4 class="">Email Address</h4>
-                  <p><a href="mailto:info@watamglass.com">info@watamglass.com</a></p>
+              </div><!-- End Contact Info Box -->
+
+              <!-- Contact Form -->
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-form h-100">
+                  <iframe aria-label='Contact Us' frameborder="0"
+                    style="height:500px;width:100%;border:none;border-radius:8px;"
+                    src='https://forms.zohopublic.com/rajwatam1/form/ContactUs/formperma/LyW9nDyq5OTn6kAWSoezYHrq8VbgUpF02k2lExuattA'>
+                  </iframe>
                 </div>
-              </div>
+              </div><!-- End Contact Form -->
+
             </div>
           </div>
-
-          <div class="col-lg-5">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <!-- <h3 class="">Feedback</h3>
-              <p class="">“Help us to serve you better"</p> -->
-              <iframe aria-label='Contact Us' frameborder="0" style="height:500px;width:99%;border:none;"
-                src='https://forms.zohopublic.com/rajwatam1/form/ContactUs/formperma/LyW9nDyq5OTn6kAWSoezYHrq8VbgUpF02k2lExuattA'></iframe>
-
-
-
-
-            </div>
-          </div>
-
         </div>
-
       </div>
 
     </section><!-- /Contact Section -->
