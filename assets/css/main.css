@@ -882,7 +882,7 @@ section,
   .hero {
     background-image: url('../img/mob-bg.png');
     background-position: center top;
-    margin-right: 5px;
+    background-position: calc(50% - 5px) top;
   }
 }
 
