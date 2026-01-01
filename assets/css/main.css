@@ -351,7 +351,7 @@ html[dir="ltr"] #navmenu ul li {
     height: 2px;
     bottom: -15px;
     left: 0;
-    background-color: var(--nav-dropdown-hover-color);
+    background-color: #f3bf7f;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
