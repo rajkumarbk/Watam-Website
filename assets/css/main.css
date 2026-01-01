@@ -866,6 +866,11 @@ section,
   .hero .hero-content h2 {
     font-size: 2rem;
   }
+
+  .hero {
+    background-image: url('../img/mob.png');
+    background-position: center top;
+  }
 }
 
 .hero .hero-content p {
