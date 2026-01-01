@@ -403,7 +403,18 @@ html[lang="en"] .navmenu .lang-ar {
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 10000;
+  }
+  
+  .mobile-nav-toggle:hover {
+    color: #ffcd8f;
+    transform: scale(1.1) rotate(90deg);
+  }
+  
+  .mobile-nav-toggle:active {
+    transform: scale(0.95);
   }
 
   .navmenu {
@@ -414,116 +425,286 @@ html[lang="en"] .navmenu .lang-ar {
   .navmenu ul {
     display: none;
     list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 320px;
+    max-height: 70vh;
+    padding: 50px 0 20px 0;
     margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     overflow-y: auto;
-    transition: 0.3s;
+    overflow-x: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                0 4px 16px rgba(0, 0, 0, 0.2),
+                inset 0 1px 1px rgba(255, 255, 255, 0.3),
+                inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  /* Smooth scroll for overflow */
+  .navmenu ul::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .navmenu ul::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .navmenu ul::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .navmenu ul::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
-    padding: 10px 20px;
+    color: #ffffff;
+    padding: 16px 24px;
     font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
-    transition: 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    margin: 4px 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover effect background */
+  .navmenu a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, 
+                rgba(255, 255, 255, 0.2) 0%, 
+                rgba(255, 255, 255, 0.1) 100%);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    z-index: -1;
+  }
+  
+  .navmenu a:hover::before,
+  .navmenu .active::before {
+    width: 100%;
+  }
+  
+  /* Left accent bar on hover/active */
+  .navmenu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 60%;
+    background: linear-gradient(180deg, #f3bf7f 0%, #ffcd8f 100%);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .navmenu a:hover::after,
+  .navmenu .active::after {
+    width: 4px;
   }
 
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
+    margin-left: 8px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, 
+                rgba(243, 191, 127, 0.1) 0%, 
+                rgba(243, 191, 127, 0.15) 100%);
+    box-shadow: 0 2px 8px rgba(243, 191, 127, 0.1);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background: linear-gradient(135deg, #f3bf7f 0%, #ffcd8f 100%);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(243, 191, 127, 0.4);
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #f3bf7f;
+    transform: translateX(4px);
+    padding-left: 28px;
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background: linear-gradient(135deg, #f3bf7f 0%, #ffcd8f 100%);
+    color: #ffffff;
     transform: rotate(180deg);
+    box-shadow: 0 4px 12px rgba(243, 191, 127, 0.4);
   }
 
   .navmenu .dropdown ul {
     position: static;
     display: none;
     z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
+    padding: 8px 0;
+    margin: 8px 20px 8px 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    margin-left: 20px;
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
   }
 
   .mobile-nav-active {
     overflow: hidden;
-    color: #f3bf7f;
   }
 
   .mobile-nav-active .mobile-nav-toggle {
     color: #f3bf7f;
     position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
+    font-size: 24px;
+    top: 30px;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    /* margin: 0; */
+    z-index: 10001;
+    animation: rotateIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1;
+  }
+  
+  @keyframes rotateIn {
+    from {
+      transform: translateX(-50%) rotate(-90deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) rotate(0deg);
+      opacity: 1;
+    }
   }
 
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
-    height: 50%;
-    width: 50%;
     inset: 0;
-    color: #252725;
-    background-color: #ffffff;
-    text-align: center;
-    transition: 0.3s;
+    background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.4) 0%, 
+                rgba(0, 0, 0, 0.6) 100%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeIn 0.4s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
+    animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Stagger animation for menu items */
+  .mobile-nav-active .navmenu > ul > li {
+    animation: fadeInUp 0.4s ease-out backwards;
+  }
+  
+  .mobile-nav-active .navmenu > ul > li:nth-child(1) { animation-delay: 0.05s; }
+  .mobile-nav-active .navmenu > ul > li:nth-child(2) { animation-delay: 0.1s; }
+  .mobile-nav-active .navmenu > ul > li:nth-child(3) { animation-delay: 0.15s; }
+  .mobile-nav-active .navmenu > ul > li:nth-child(4) { animation-delay: 0.2s; }
+  .mobile-nav-active .navmenu > ul > li:nth-child(5) { animation-delay: 0.25s; }
+  .mobile-nav-active .navmenu > ul > li:nth-child(6) { animation-delay: 0.3s; }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Smooth close animation */
+  .navmenu.closing > ul {
+    animation: slideOutLeft 0.3s ease-in forwards;
+  }
+  
+  @keyframes slideOutLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
   }
 }
 
