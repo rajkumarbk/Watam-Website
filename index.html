@@ -78,22 +78,22 @@
       <nav id="navmenu" class="navmenu ">
         <ul>
           <li class="nav-item">
-            <a href="#hero" class="nav-link ">الرئيسية</a>
+            <a href="#hero" class="nav-link">الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link ">عن الشركة</a>
+            <a href="#about" class="nav-link">عن الشركة</a>
           </li>
           <li class="nav-item">
-            <a href="#branches" class="nav-link ">الفروع</a>
+            <a href="#branches" class="nav-link">الفروع</a>
           </li>
           <li class="nav-item">
-            <a href="#services" class="nav-link ">خدماتنا </a>
+            <a href="#services" class="nav-link">خدماتنا </a>
           </li>
           <li class="nav-item">
-            <a href="#portfolio" class="nav-link ">اعمالنا </a>
+            <a href="#portfolio" class="nav-link">اعمالنا </a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link "> تواصل معنا</a>
+            <a href="#contact" class="nav-link"> تواصل معنا</a>
           </li>
           <li class="nav-item">
             <a href="/en/" id="langToggle" class="nav-link d-inline">Eng</a>
@@ -732,7 +732,56 @@
                     src='https://forms.zohopublic.com/rajwatam1/form/ContactUs1/formperma/CU4AdkCpeTKXNt0n7QuoKcSXF0lwTysf8d3LHSHKdGA'>
                   </iframe>
                 </div>
-              </div><!-- End Contact Form -->
+              </div>
+              <!-- End Contact Form -->
+               <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <form action="send_mail.php" method="POST" class="contact-form bg-white p-5 rounded-4 shadow-lg border border-light">
+                        <h3 class="mb-4 text-center fw-bold text-primary">Get in Touch</h3>
+                        <p class="text-center text-muted mb-4">We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+
+                        <div class="row g-4">
+                            <input type="hidden" name="form_type" value="contact">
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name"><i class="bi bi-person me-2"></i>Your Name</label>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email"><i class="bi bi-envelope me-2"></i>Your Email</label>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject"><i class="bi bi-chat-dots me-2"></i>Subject</label>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 200px" required></textarea>
+                                    <label for="message"><i class="bi bi-pencil-square me-2"></i>Message</label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary px-5 py-3 rounded-pill shadow-sm fw-semibold btn-animate" type="submit">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
               <!-- Contact Info Box (Left side in RTL) -->
               <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="200">
