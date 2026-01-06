@@ -764,10 +764,41 @@
               <!-- Contact Form -->
               <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
                 <div class="contact-form h-100">
-                  <iframe aria-label='Contact Us' frameborder="0"
+                  <!-- <iframe aria-label='Contact Us' frameborder="0"
                     style="height:500px;width:100%;border:none;border-radius:8px;"
                     src='https://forms.zohopublic.com/rajwatam1/form/ContactUs/formperma/LyW9nDyq5OTn6kAWSoezYHrq8VbgUpF02k2lExuattA'>
-                  </iframe>
+                  </iframe> -->
+                  <!-- Replace the iframe section with this form -->
+                  <div class="contact-form h-100 p-4 border rounded">
+                    <form action="../send_mail.php" method="POST" class="php-email-form">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" required
+                          placeholder="your@email.com">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="phone" class="form-label">Phone *</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required
+                          placeholder="+966 XXX XXX XXX">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required
+                          placeholder="Write your message here..."></textarea>
+                      </div>
+
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div><!-- End Contact Form -->
 
