@@ -689,95 +689,117 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="section-title mb-4">Contact Us</h2>
+  <!-- Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="row justify-content-center g-5">
+
+    <!-- Contact Info Box -->
+    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="info-box h-100 p-4 border rounded">
+        <h3 class="mb-4">معلومات الاتصال</h3>
+        <p class="mb-4 text-muted">لا تتردد في الاتصال بنا</p>
+
+        <div class="info-item mb-4">
+          <div class="d-flex align-items-start">
+            <div class="icon-box ms-3">
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div class="content">
+              <h4 class="mb-2">موقعنا</h4>
+              <a href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank">
+                طريق الأمير بندر بن عبدالعزيز، الرياض
+              </a>
+            </div>
           </div>
         </div>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="row g-4 g-lg-5 justify-content-center">
+        <div class="info-item mb-4">
+          <div class="d-flex align-items-start">
+            <div class="icon-box ms-3">
+              <i class="bi bi-telephone fs-5"></i>
+            </div>
+            <div class="content">
+              <h4 class="mb-2">رقم الهاتف</h4>
+              <a href="tel:+966505282955" dir="ltr">+966 505 282 955</a>
+            </div>
+          </div>
+        </div>
 
-              <!-- Contact Info Box -->
-              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                <div class="info-box h-100 p-4 border rounded">
-                  <h3 class="mb-4">Contact Info</h3>
-                  <p class="mb-4 text-muted">Feel free to contact us</p>
-
-                  <!-- Location -->
-                  <div class="info-item mb-4">
-                    <div class="d-flex align-items-start">
-                      <div class="icon-box me-3">
-                        <i class="bi bi-geo-alt fs-5"></i>
-                      </div>
-                      <div class="content">
-                        <h4 class="mb-2">Our Location</h4>
-                        <p class="mb-0">
-                          <a href="https://maps.app.goo.gl/qdtsrY26cTxTSJRE8" target="_blank"
-                            class="d-flex align-items-center">
-                            <i class="bi bi-geo-alt me-2"></i>Riyadh
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Phone -->
-                  <div class="info-item mb-4">
-                    <div class="d-flex align-items-start">
-                      <div class="icon-box me-3">
-                        <i class="bi bi-telephone fs-5"></i>
-                      </div>
-                      <div class="content">
-                        <h4 class="mb-2">Phone Number</h4>
-                        <p class="mb-0">
-                          <a href="tel:+966505282955">+966 505 282 955</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="info-item">
-                    <div class="d-flex align-items-start">
-                      <div class="icon-box me-3">
-                        <i class="bi bi-envelope fs-5"></i>
-                      </div>
-                      <div class="content">
-                        <h4 class="mb-2">Email Address</h4>
-                        <p class="mb-0">
-                          <a href="mailto:info@watamglass.com">info@watamglass.com</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div><!-- End Contact Info -->
-
-              <!-- Contact Form -->
-              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
-                <div class="contact-form h-100">
-                  <iframe aria-label="Contact Us" frameborder="0"
-                    style="height:500px;width:100%;border:none;border-radius:8px;"
-                    src="https://forms.zohopublic.com/rajwatam1/form/ContactUs/formperma/LyW9nDyq5OTn6kAWSoezYHrq8VbgUpF02k2lExuattA">
-                  </iframe>
-                </div>
-              </div><!-- End Contact Form -->
-
+        <div class="info-item">
+          <div class="d-flex align-items-start">
+            <div class="icon-box ms-3">
+              <i class="bi bi-envelope fs-5"></i>
+            </div>
+            <div class="content">
+              <h4 class="mb-2">البريد الإلكتروني</h4>
+              <a href="mailto:info@watamglass.com">info@watamglass.com</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </section>
+    <!-- Contact Form -->
+    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+      <form action="send_mail.php" method="POST"
+        class="contact-form bg-white p-5 rounded-4 shadow-lg border">
+
+        <h3 class="mb-4 text-center fw-bold text-primary">Get in Touch</h3>
+        <p class="text-center text-muted mb-4">
+          We’d love to hear from you!
+        </p>
+
+        <input type="hidden" name="form_type" value="contact">
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" name="name" required>
+              <label>Your Name</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="email" class="form-control" name="email" required>
+              <label>Your Email</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-floating">
+              <input type="text" class="form-control" name="subject" required>
+              <label>Subject</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-floating">
+              <textarea class="form-control" name="message" style="height:200px" required></textarea>
+              <label>Message</label>
+            </div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button class="btn btn-primary px-5 py-3 rounded-pill">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 
   </main>
