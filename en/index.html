@@ -776,9 +776,10 @@
                 <div class="contact-form h-100">
                   <h3 class="mb-4">Send us a Message</h3>
 
+
                   <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                     <div class="row gy-4">
-                      <input type="hidden" name="access_key" value="89dc1160-7d98-4052-ab8b-0eb6697047a3">
+                      <input type="hidden" name="access_key" value="3a781af3-04b8-4e60-86ab-6f0dd7bb8a19">
                       <div class="col-md-6">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                       </div>
@@ -788,7 +789,10 @@
                       </div>
 
                       <div class="col-md-6">
-                        <input type="tel" name="phone" class="form-control" placeholder="Your Phone" dir="ltr">
+                        <input type="tel" name="phone" id="phone" class="form-control"
+                          placeholder="رقم الهاتف (05xxxxxxxx أو +9665xxxxxxxx)" dir="ltr"
+                          pattern="^(05\d{8}|5\d{8}|\+9665\d{8})$"
+                          title="رقم سعودي صحيح مثل 05xxxxxxxx أو +9665xxxxxxxx" required>
                       </div>
 
                       <div class="col-md-6">

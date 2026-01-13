@@ -801,14 +801,64 @@
               </div><!-- End Contact Info -->
 
               <!-- Contact Form -->
-              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+              <!-- <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
                 <div class="contact-form h-100">
                   <iframe dir="rtl" aria-label="ارسل لنا رسالة" frameborder="0"
                     style="height:500px;width:100%;border:none;border-radius:8px;"
                     src="https://forms.zohopublic.com/rajwatam1/form/ContactUs1/formperma/CU4AdkCpeTKXNt0n7QuoKcSXF0lwTysf8d3LHSHKdGA">
                   </iframe>
                 </div>
-              </div><!-- End Contact Form -->
+              </div> -->
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-form h-100" dir="rtl">
+                  <h3 class="mb-4 text-end">أرسل لنا رسالة</h3>
+
+                  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="row gy-4">
+
+                      <input type="hidden" name="access_key" value="3a781af3-04b8-4e60-86ab-6f0dd7bb8a19">
+
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control text-end" placeholder="الاسم الكامل"
+                          required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="email" name="email" class="form-control text-end" placeholder="البريد الإلكتروني"
+                          required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="tel" name="phone" class="form-control" placeholder="رقم الهاتف" dir="ltr">
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="text" name="subject" class="form-control text-end" placeholder="الموضوع">
+                      </div>
+
+                      <div class="col-12">
+                        <textarea name="message" class="form-control text-end" rows="6" placeholder="اكتب رسالتك هنا"
+                          required></textarea>
+                      </div>
+
+                      <div class="col-12 text-center">
+                        <div class="loading" style="display:none;">جاري الإرسال...</div>
+                        <div class="error-message" style="display:none;"></div>
+                        <div class="sent-message" style="display:none;">
+                          تم إرسال رسالتك بنجاح. شكرًا لتواصلك معنا!
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                          إرسال الرسالة <i class="bi bi-send ms-2"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- End Contact Form -->
 
             </div>
           </div>

@@ -291,3 +291,21 @@ langToggleBtn.addEventListener("click", () => {
 
 // Initialize
 setLanguage("ar");
+
+const form = document.getElementById('contactForm');
+const phoneInput = document.getElementById('phone');
+
+form.addEventListener('submit', function (e) {
+  const phone = phoneInput.value.trim();
+  const saudiRegex = /^(05\d{8}|5\d{8}|\+9665\d{8})$/;
+
+  if (!saudiRegex.test(phone)) {
+    e.preventDefault();
+    phoneInput.classList.add('is-invalid');
+    phoneInput.focus();
+    alert('يرجى إدخال رقم هاتف سعودي صحيح');
+    return false;
+  }
+
+  phoneInput.classList.remove('is-invalid');
+});

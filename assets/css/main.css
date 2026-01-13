@@ -924,6 +924,11 @@ html[lang="en"] .navmenu .lang-ar {
   pointer-events: none;
 }
 
+.is-invalid {
+  border-color: #dc3545;
+}
+
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button
