@@ -57,11 +57,36 @@
    * Preloader
    */
   const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+const bar = document.querySelector('#preloaderBar');
+const percentText = document.querySelector('#preloaderPercent');
+
+if (preloader && bar && percentText) {
+  let progress = 0;
+
+  // Fake progress while loading (feels real)
+  const timer = setInterval(() => {
+    // slow down near the end so it doesn't hit 100 too early
+    const step = progress < 70 ? 4 : progress < 90 ? 2 : 0.5;
+    progress = Math.min(progress + step, 95);
+
+    bar.style.width = progress + '%';
+    percentText.textContent = Math.round(progress) + '%';
+  }, 120);
+
+  window.addEventListener('load', () => {
+    clearInterval(timer);
+
+    // finish to 100%
+    bar.style.width = '100%';
+    percentText.textContent = '100%';
+
+    // small delay for smooth finish + fade out
+    setTimeout(() => {
+      preloader.classList.add('hide');
+      setTimeout(() => preloader.remove(), 400);
+    }, 250);
+  });
+}
 
   /**
    * Scroll top button

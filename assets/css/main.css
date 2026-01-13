@@ -762,7 +762,7 @@ html[lang="en"] .navmenu .lang-ar {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
+  color: #f3bf7f;
   border-color: var(--accent-color);
 }
 
@@ -872,37 +872,6 @@ html[lang="en"] .navmenu .lang-ar {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-/* #preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-} */
 .preloader {
   position: fixed;
   top: 0;
@@ -911,17 +880,50 @@ html[lang="en"] .navmenu .lang-ar {
   height: 100%;
   background: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 14px;
   z-index: 9999;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
 }
 
 .preloader-img {
   max-width: 100px;
-  /* Adjust the size */
   max-height: 100px;
-  /* Adjust the size */
 }
+
+/* Progress container */
+.preloader-progress {
+  width: min(320px, 70vw);
+  height: 8px;
+  background: #eee;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+/* The moving bar */
+.preloader-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: var(--accent-color);
+  transition: width 0.25s ease;
+}
+
+.preloader-percent {
+  font-size: 13px;
+  color: #666;
+  letter-spacing: 0.3px;
+}
+
+.preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button
