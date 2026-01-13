@@ -763,14 +763,58 @@
               </div><!-- End Contact Info -->
 
               <!-- Contact Form -->
-              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+              <!-- <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
                 <div class="contact-form h-100">
                   <iframe aria-label="Contact Us" frameborder="0"
                     style="height:500px;width:100%;border:none;border-radius:8px;"
                     src="https://forms.zohopublic.com/rajwatam1/form/ContactUs/formperma/LyW9nDyq5OTn6kAWSoezYHrq8VbgUpF02k2lExuattA">
                   </iframe>
                 </div>
-              </div><!-- End Contact Form -->
+              </div> -->
+              <!-- Replace the contact form section -->
+              <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-form h-100">
+                  <h3 class="mb-4">Send us a Message</h3>
+
+                  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="row gy-4">
+                      <input type="hidden" name="access_key" value="89dc1160-7d98-4052-ab8b-0eb6697047a3">
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="tel" name="phone" class="form-control" placeholder="Your Phone" dir="ltr">
+                      </div>
+
+                      <div class="col-md-6">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                      </div>
+
+                      <div class="col-12">
+                        <textarea name="message" class="form-control" rows="6" placeholder="Message"
+                          required></textarea>
+                      </div>
+
+                      <div class="col-12 text-center">
+                        <div class="loading" style="display:none;">Sending...</div>
+                        <div class="error-message" style="display:none;"></div>
+                        <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
+
+                        <button type="submit" class="btn btn-primary">
+                          Send Message <i class="bi bi-send ms-2"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- End Contact Form -->
 
             </div>
           </div>
